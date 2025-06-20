@@ -16,8 +16,27 @@ This project aims to analyze and visualize sales data from a Superstore using Po
 - DAX (Data Analysis Expressions - For calculated measures and KPIs
 - Excel/Csv - For Data Storage
 
-# 🧰 Key DAX Measures
-- Average Orders = Average Orders = VAR Orders2020 = CALCULATETABLE(VALUES('SuperStore_Sales_Dataset'[Order ID]),YEAR('SuperStore_Sales_Dataset'[Order Date]) = 2020)
-                                    VAR Months2020 = CALCULATE(DISTINCTCOUNT('SuperStore_Sales_Dataset'[Month]),YEAR('SuperStore_Sales_Dataset'[Order Date]) = 2020)
-                                    RETURN
-                                    DIVIDE(COUNTROWS(Orders2020), Months2020)
+# 🧰 Key DAX Measures Calculated
+- Average Orders
+- Total Sales
+- Total Profit
+- Unique Orders
+- Quantity Sold
+
+# 📦 Dataset Description
+- Order Info : Order Date, Order ID, Ship Date, Ship Mode
+- Customer Info : Customer ID, Customer Name, Segment
+- Geographical Info : City, State, Region, Country
+- Product Info : Product ID, Product Name, Category, Sub-Category
+- Sales Metrics : Sales, Profit, Quantity, Returns, Payment Mode
+
+# 📌 Key Visuals & Insights
+- Sales and Profit Trend Line Chart - Showcased Seasonal Sales and Profit Behaviour
+- Top Products Bar Chart - Tech products lead in Sales
+- Sales By Customer Segment Donut Chart - Corporate and Consumer are the dominant Segments
+- Profit Heatmap By Region and State - East Region shows high sales but low profit margins
+- Average Order Value - West Region shows the highest Average Order Value followed by East
+- Average Delivery Time - Showcases Average Delivery Time taken by different Shipping Modes for different Categories
+
+# 📊 Dashboard Screenshot
+![image](https://github.com/user-attachments/assets/a27866dc-8cdd-4bc6-8338-6bbc22e6f7b8)
