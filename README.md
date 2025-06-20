@@ -12,3 +12,12 @@ This project aims to analyze and visualize sales data from a Superstore using Po
 
 # 🧰 Tech Stack Used
 - Power BI - For data Visualization and dashboard creation
+- Power Query (M) - For Data Cleaning and Transformation
+- DAX (Data Analysis Expressions - For calculated measures and KPIs
+- Excel/Csv - For Data Storage
+
+# 🧰 Key DAX Measures
+- Average Orders = Average Orders = VAR Orders2020 = CALCULATETABLE(VALUES('SuperStore_Sales_Dataset'[Order ID]),YEAR('SuperStore_Sales_Dataset'[Order Date]) = 2020)
+                                    VAR Months2020 = CALCULATE(DISTINCTCOUNT('SuperStore_Sales_Dataset'[Month]),YEAR('SuperStore_Sales_Dataset'[Order Date]) = 2020)
+                                    RETURN
+                                    DIVIDE(COUNTROWS(Orders2020), Months2020)
