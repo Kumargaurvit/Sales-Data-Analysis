@@ -16,13 +16,6 @@ This project aims to analyze and visualize sales data from a Superstore using Po
 - DAX (Data Analysis Expressions - For calculated measures and KPIs
 - Excel/Csv - For Data Storage
 
-# 🧰 Key DAX Measures Calculated
-- Average Orders
-- Total Sales
-- Total Profit
-- Unique Orders
-- Quantity Sold
-
 # 📦 Dataset Description
 - Order Info : Order Date, Order ID, Ship Date, Ship Mode
 - Customer Info : Customer ID, Customer Name, Segment
